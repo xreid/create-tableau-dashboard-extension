@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "start": "node scripts/server.js",
-    "test": "jasmine",
-    "dev": "yarn run build && yarn run dev-server",
+    "test": "jasmine --config=spec/config/jasmine.config.json",
+    "dev": "yarn run bundle && yarn run dev-server",
     "dev-server": "webpack-dev-server",
-    "build": "npx webpack"
+    "bundle": "npx webpack"
   },
   "dependencies": {
     "express": "^4.16.4",
