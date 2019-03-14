@@ -1,0 +1,22 @@
+{
+  "name": "ex",
+  "version": "{{extension-version}}",
+  "description": "{{extension-description}}",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/server.js",
+    "test": "jasmine",
+    "dev": "yarn run build && yarn run dev-server",
+    "dev-server": "webpack-dev-server",
+    "build": "npx webpack"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
