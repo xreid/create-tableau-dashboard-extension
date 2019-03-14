@@ -1,13 +1,12 @@
 {
-  "name": "ex",
+  "name": "{{extension-name}}",
   "version": "{{extension-version}}",
   "description": "{{extension-description}}",
   "private": true,
   "scripts": {
     "start": "node scripts/server.js",
     "test": "jasmine --config=spec/config/jasmine.config.json",
-    "dev": "yarn run bundle && yarn run dev-server",
-    "dev-server": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "bundle": "npx webpack"
   },
   "dependencies": {
